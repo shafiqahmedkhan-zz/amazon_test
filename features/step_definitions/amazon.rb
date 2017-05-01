@@ -20,3 +20,9 @@ Then(/^I am logged in$/) do
   puts @homepage.navigation_bar.your_acc_btn.text
   expect(@homepage.navigation_bar.your_acc_btn).to have_content('Shafiq')
 end
+
+Given(/^Amazon\.co\.uk is open and I am logged in$/) do
+  step 'Amazon.co.uk is open'
+  step 'I click login'
+  step 'enter valid #{username}> and #{password}'
+end
