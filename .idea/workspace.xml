@@ -24,7 +24,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/screenshot_2017-05-01-18-10-44.155.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/page_objects/search_results_page.rb" afterPath="$PROJECT_DIR$/features/page_objects/search_results_page.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/page_objects/sections/search_results/search_results.rb" afterPath="$PROJECT_DIR$/features/page_objects/sections/search_results/search_results.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/price_verify.feature" afterPath="$PROJECT_DIR$/features/price_verify.feature" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/amazon.rb" afterPath="$PROJECT_DIR$/features/step_definitions/amazon.rb" />
     </list>
@@ -523,7 +522,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24652000" />
+    <option name="totallyTimeSpent" value="24716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="821" extended-state="0" />
