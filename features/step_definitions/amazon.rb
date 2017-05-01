@@ -37,3 +37,12 @@ Then(/^the first result has the word ([^"]*) in it$/) do |product|
   @searchresultspage = PageObjects::SearchResultsPage.new
   expect(@searchresultspage.first_line_item.text).to include(product)
 end
+
+And(/^I add the product to my basket$/) do
+  @searchresultspage = PageObjects::SearchResultsPage.new
+  puts @searchresultspage.choosing_first_line_item
+  @searchresultspage.choosing_first_line_item
+  #@searchresultspage.choosing_first_line_item
+  #@productpage = PageObjects::ProductPage.new
+  #@productpage.add_to_basket.add_product_to_basket
+end

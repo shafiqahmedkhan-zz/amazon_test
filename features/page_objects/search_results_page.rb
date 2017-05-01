@@ -5,9 +5,10 @@ module PageObjects
   class SearchResultsPage < SitePrism::Page
 
     sections :search_results, PageObjects::Sections::SearchResultsPage::SearchResults, '.s-item-container'
+    element :product_name, '.a-row .a-spacing-none'
 
-    def first_line_item
-      search_results[0]
+    def choosing_first_line_item
+      search_results.first.product_name.click
     end
 
   end
