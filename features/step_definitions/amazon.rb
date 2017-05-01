@@ -35,7 +35,7 @@ end
 
 Then(/^the first result has the word ([^"]*) in it$/) do |product|
   @searchresultspage = PageObjects::SearchResultsPage.new
-  puts @searchresultspage.search_results_list.text
+  puts @searchresultspage.search_results_list.line_items[0]
   #puts @searchresultspage.search_results_list[1].text
   #expect(@searchresultspage.first_line_item).should have_content(product)
 end
