@@ -3,7 +3,7 @@ module PageObjects
     module HomePage
       class NavigationBar < SitePrism::Section
 
-        element :your_acc_btn, "a[id='nav-link-yourAccount']"
+        element :your_acc_btn, '#nav-link-yourAccount'
 
       end
     end

@@ -6,5 +6,5 @@ Feature: Sign into Amazon.co.uk
     And enter valid <username> and <password>
     Then I am logged in
     Examples:
-    |username                |password   |
-    |aja.sekhar@hotmail.co.uk|test123|
+    |username                     |password   |
+    |shafiq_malik_2010@hotmail.com|Vipergtsr1!|
