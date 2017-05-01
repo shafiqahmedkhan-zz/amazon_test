@@ -1,4 +1,5 @@
 require 'selenium-webdriver'
+require 'rspec/expectations'
 
 Given /^Amazon.co.uk is open$/ do
   visit "http://www.amazon.co.uk"
@@ -10,7 +11,7 @@ When /^I click login$/ do
 end
 
 
-And(/^enter valid (.*) and (.*)$/) do |username, password|
+And(/^enter (.*) and (.*)$/) do |username, password|
   @loginpage = PageObjects::LoginPage.new
   @loginpage.sign_in.login(username,password)
 end
@@ -22,7 +23,19 @@ Then(/^I am logged in$/) do
 end
 
 Given(/^Amazon\.co\.uk is open and I am logged in$/) do
-  step 'Amazon.co.uk is open'
-  step 'I click login'
-  step 'enter valid #{username}> and #{password}'
+  step %{Amazon.co.uk is open}
+  step %{I click login}
+  step %{enter shafiq_malik_2010@hotmail.com and Vipergtsr1!}
+end
+
+When(/^I search for ([^"]*)$/) do |product|
+  @homepage = PageObjects::HomePage.new
+  @homepage.navigation_bar.search_product product
+end
+
+Then(/^the first result has the word ([^"]*) in it$/) do |product|
+  @searchresultspage = PageObjects::SearchResultsPage.new
+  puts @searchresultspage.search_results_list.text
+  #puts @searchresultspage.search_results_list[1].text
+  #expect(@searchresultspage.first_line_item).should have_content(product)
 end
